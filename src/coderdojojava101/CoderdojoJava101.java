@@ -16,6 +16,34 @@ public class CoderdojoJava101
 
     public static void main(String[] args)
     {
+        AreYouOlderThan18();
+        //Greaterthanexample();
+        //mathguessexample(args);
+    }
+
+    public static void AreYouOlderThan18()
+    {
+        String ageInput = JOptionPane.showInputDialog("what age are you?");
+        int age = Integer.parseInt(ageInput);
+        if (age > 18)
+        {
+            System.out.println("You're older than 18,you can vote");
+        } else if (age == 18)
+        {
+            System.out.println("GET A JOB!");
+        } else
+        {
+            System.out.println("Bugger off");
+        }
+    }
+
+    public static void Greaterthanexample()
+    {
+        System.out.println("Greaterthanexample");
+    }
+
+    public static void mathguessexample(String[] args)
+    {
         String name = JOptionPane.showInputDialog("What is your name");
         System.out.print("Hello ");
         System.out.println(name);
